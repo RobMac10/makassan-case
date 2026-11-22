@@ -1,0 +1,39 @@
+/* Wide, tappable exhibit pictures for case files. */
+.exhibit{
+  max-width:40rem;
+  margin:1.2rem auto 1.4rem;
+  padding:0;
+  background:#f7efe2;
+  border:1px solid #c9a96a;
+  border-radius:10px;
+  box-sizing:border-box;
+}
+.exhibit-zoom{
+  display:block;
+  width:100%;
+  margin:0;
+  padding:.65rem .65rem 0;
+  border:0;
+  background:none;
+  cursor:zoom-in;
+}
+.exhibit-zoom img,
+.exhibit img{
+  display:block;
+  width:auto;
+  max-width:100%;
+  max-height:70vh;
+  height:auto;
+  margin:0 auto;
+  object-fit:contain;
+}
+.exhibit figcaption{
+  margin:.45rem .85rem .85rem;
+  font:500 .92rem/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;
+  color:#5c5148;
+}
+.exhibit + .src{max-width:40rem;margin:-.6rem auto 1.4rem;padding:0 .4rem}
+@media (max-width:600px){
+  .exhibit-zoom img,
+  .exhibit img{max-height:60vh}
+}

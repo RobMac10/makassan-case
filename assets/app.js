@@ -148,7 +148,7 @@
       if (img) img.src = '';
       if (lastFocus && lastFocus.focus) lastFocus.focus();
     }
-    Array.prototype.forEach.call(document.querySelectorAll('.portrait-zoom'), function (btn) {
+    Array.prototype.forEach.call(document.querySelectorAll('.portrait-zoom, .exhibit-zoom'), function (btn) {
       btn.addEventListener('click', function (e) {
         e.preventDefault();
         var pic = btn.querySelector('img');
