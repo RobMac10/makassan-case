@@ -270,3 +270,9 @@ body.lightbox-open{overflow:hidden}
 .notebook.typed .close-line{font-family:"TypedNote",Georgia,serif;font-size:1.45rem}
 html{max-width:100%}
 img{max-width:100%;height:auto}
+
+/* image fit: keep aspect ratio, fit 390px and 1280px screens, tap to enlarge */
+img{max-width:100%;height:auto}
+.portrait-zoom img{width:100%;height:auto;object-fit:contain;max-height:65vh}
+.lightbox-stage img{width:auto;height:auto;max-width:min(92vw,1600px);max-height:88vh;object-fit:contain}
+@media (max-width:640px){.portrait-zoom img{max-height:65vh}.lightbox{padding:12px}}
