@@ -7,9 +7,9 @@
     notebook: document.getElementById('notebook'),
     case: document.getElementById('case'),
     finding: document.getElementById('finding'),
-    sleuth: document.getElementById('sleuth'),
-    deeptime: document.getElementById('deeptime')
+    sleuth: document.getElementById('sleuth')
   };
+  Object.keys(panels).forEach(function (k) { if (!panels[k]) delete panels[k]; });
   var aliases = {
     diary: 'notebook',
     thediary: 'notebook',
